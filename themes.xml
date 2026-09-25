@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.DrawingApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF212121</item>
+        <item name="colorPrimaryDark">#FF000000</item>
+        <item name="colorAccent">#FF03DAC5</item>
+    </style>
+</resources>

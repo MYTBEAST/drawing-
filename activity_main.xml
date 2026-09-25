@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Drawing canvas -->
+    <com.example.drawingapp.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Color palette row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/toolbar_bg"
+        android:padding="8dp">
+
+        <View android:id="@+id/colorBlack" style="@style/ColorSwatch" android:background="#000000"/>
+        <View android:id="@+id/colorRed" style="@style/ColorSwatch" android:background="#F44336"/>
+        <View android:id="@+id/colorBlue" style="@style/ColorSwatch" android:background="#2196F3"/>
+        <View android:id="@+id/colorGreen" style="@style/ColorSwatch" android:background="#4CAF50"/>
+        <View android:id="@+id/colorYellow" style="@style/ColorSwatch" android:background="#FFEB3B"/>
+        <View android:id="@+id/colorOrange" style="@style/ColorSwatch" android:background="#FF9800"/>
+        <View android:id="@+id/colorPurple" style="@style/ColorSwatch" android:background="#9C27B0"/>
+
+    </LinearLayout>
+
+    <!-- Action buttons row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/toolbar_bg"
+        android:paddingBottom="12dp">
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Undo" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</LinearLayout>
